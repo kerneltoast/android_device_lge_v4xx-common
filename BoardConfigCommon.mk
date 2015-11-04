@@ -97,9 +97,6 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
-# Malloc
-MALLOC_IMPL := dlmalloc
-
 # Offmode Charging
 BOARD_CHARGER_SHOW_PERCENTAGE := true
 COMMON_GLOBAL_CFLAGS += \
