@@ -104,10 +104,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8226 \
     liboverlay
 
-# Filesystem
-PRODUCT_PACKAGES += \
-    e2fsck
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8226
@@ -216,10 +212,6 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf
-
-# USB
-PRODUCT_PACKAGES += \
-    com.android.future.usb.accessory
 
 # Wifi
 PRODUCT_PACKAGES += \
