@@ -62,10 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.cabl=0 \
     ro.qualcomm.perf.cores_online=2
 
-# Recovery
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.cwm.forbid_format=/boot,/firmware,/mpt,/persist,/persist-lg,/sns
-
 # Sensors
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.qualcomm.sns.daemon=e \
