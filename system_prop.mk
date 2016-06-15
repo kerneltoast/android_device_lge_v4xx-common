@@ -15,14 +15,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=true
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.qc.sdk.audio.fluencetype=fluence
-
-PRODUCT_PROPERTY_OVERRIDES += \
     use.voice.path.for.pcm.voip=true
 
 # CNE
