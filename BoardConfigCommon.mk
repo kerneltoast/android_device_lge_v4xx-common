@@ -117,14 +117,7 @@ TARGET_POWERHAL_VARIANT := none
 BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
-BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_RECOVERY_SWIPE := true
-BOARD_SUPPRESS_EMMC_WIPE := true
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
-COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-TARGET_RECOVERY_FSTAB := device/lge/v4xx-common/rootdir/etc/fstab.e7
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.e7
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
@@ -133,6 +126,17 @@ BOARD_SEPOLICY_DIRS += device/lge/v4xx-common/sepolicy
 # Time services
 # TODO (needs libtime_genoff)
 # BOARD_USES_QC_TIME_SERVICES := true
+
+# TWRP Recovery -- uncomment to build
+#COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+#DEVICE_RESOLUTION := 800x1280
+#RECOVERY_SDCARD_ON_DATA := true
+#RECOVERY_VARIANT := twrp
+#TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+#TW_EXTRA_LANGUAGES := true
+#TW_INCLUDE_CRYPTO := true
+#TW_NO_USB_STORAGE := true
+#TW_TARGET_USES_QCOM_BSP := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
